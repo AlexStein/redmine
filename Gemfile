@@ -11,7 +11,7 @@ gem "protected_attributes"
 gem "actionpack-action_caching"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :jruby]
 gem "rbpdf", "~> 1.18.2"
 
 # Optional gem for LDAP authentication
@@ -25,7 +25,7 @@ group :openid do
   gem "rack-openid"
 end
 
-platforms :mri, :mingw do
+platforms :mri, :mingw, :x64_mingw do
   # Optional gem for exporting the gantt to a PNG file, not supported with jruby
   group :rmagick do
     gem "rmagick", ">= 2.0.0"
@@ -55,19 +55,19 @@ if File.exist?(database_file)
     adapters.each do |adapter|
       case adapter
       when 'mysql2'
-        gem "mysql2", "~> 0.3.11", :platforms => [:mri, :mingw]
+        gem "mysql2", "~> 0.3.11", :platforms => [:mri, :mingw, :x64_mingw]
         gem "activerecord-jdbcmysql-adapter", :platforms => :jruby
       when 'mysql'
         gem "activerecord-jdbcmysql-adapter", :platforms => :jruby
       when /postgresql/
-        gem "pg", ">= 0.11.0", :platforms => [:mri, :mingw]
+        gem "pg", ">= 0.11.0", :platforms => [:mri, :mingw, :x64_mingw]
         gem "activerecord-jdbcpostgresql-adapter", :platforms => :jruby
       when /sqlite3/
-        gem "sqlite3", :platforms => [:mri, :mingw]
+        gem "sqlite3", :platforms => [:mri, :mingw, :x64_mingw]
         gem "activerecord-jdbcsqlite3-adapter", :platforms => :jruby
       when /sqlserver/
-        gem "tiny_tds", "~> 0.6.2", :platforms => [:mri, :mingw]
-        gem "activerecord-sqlserver-adapter", :platforms => [:mri, :mingw]
+        gem "tiny_tds", "~> 0.6.2", :platforms => [:mri, :mingw, :x64_mingw]
+        gem "activerecord-sqlserver-adapter", :platforms => [:mri, :mingw, :x64_mingw]
       else
         warn("Unknown database adapter `#{adapter}` found in config/database.yml, use Gemfile.local to load your own database gems")
       end
@@ -86,7 +86,6 @@ end
 
 group :test do
   gem "minitest"
-  gem "shoulda-context"
   gem "mocha", "~> 1.0.0", :require => 'mocha/api'
   # For running UI tests
   gem "capybara", "~> 2.1.0"

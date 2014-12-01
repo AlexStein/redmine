@@ -1231,3 +1231,7 @@ ru:
   field_users_visibility: Видимость пользователя
   label_users_visibility_all: Все активные пользователи
   label_users_visibility_members_of_visible_projects: Участники видимых проектов
+  label_edit_attachments: Изменить файлы
+  setting_link_copied_issue: Связать задачи при копировании
+  label_link_copied_issue: Связать с копируемой задачей
+  label_ask: Спросить
