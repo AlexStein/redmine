@@ -1217,17 +1217,17 @@ ru:
   label_link_values_to: Значения ссылки для URL
   setting_force_default_language_for_anonymous: Не определять язык для анонимных пользователей
   setting_force_default_language_for_loggedin: Не определять язык для зарегистрированных пользователей
-  label_custom_field_select_type: Выберите тип объекта для которого будет создано настраиваемое поле
-  label_issue_assigned_to_updated: Assignee updated
-  label_check_for_updates: Check for updates
-  label_latest_compatible_version: Latest compatible version
-  label_unknown_plugin: Unknown plugin
-  label_radio_buttons: radio buttons
-  label_group_anonymous: Anonymous users
-  label_group_non_member: Non member users
-  label_add_projects: Add projects
-  field_default_status: Default status
-  text_subversion_repository_note: 'Examples: file:///, http://, https://, svn://, svn+[tunnelscheme]://'
-  field_users_visibility: Users visibility
-  label_users_visibility_all: All active users
-  label_users_visibility_members_of_visible_projects: Members of visible projects
+  label_custom_field_select_type: Выберите тип объекта, для которого будет создано настраиваемое поле
+  label_issue_assigned_to_updated: 'Поле "Назначена" обновлено'
+  label_check_for_updates: Проверить наличие обновлений
+  label_latest_compatible_version: Последняя совместимая версия
+  label_unknown_plugin: Неизвестный плагин
+  label_radio_buttons: радио-кнопки
+  label_group_anonymous: Анонимный пользователь
+  label_group_non_member: Пользователи без групп
+  label_add_projects: Добавить проекты
+  field_default_status: Статус по-умолчанию
+  text_subversion_repository_note: 'Примеры: file:///, http://, https://, svn://, svn+[tunnelscheme]://'
+  field_users_visibility: Видимость пользователя
+  label_users_visibility_all: Все активные пользователи
+  label_users_visibility_members_of_visible_projects: Участники видимых проектов

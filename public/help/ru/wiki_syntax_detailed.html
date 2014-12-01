@@ -271,11 +271,11 @@ bq. Rails - это полноценный, многоуровневый фрей
         <h3><a name="11" class="wiki-page"></a>Содержание</h3>
 
 <pre>
-{{Содержание}} =&gt; содержание, выровненное по левому краю
-{{&gt;Содержание}} =&gt; содержание, выровненное по правому краю
+{{TOC}} =&gt; содержание, выровненное по левому краю
+{{&gt;TOC}} =&gt; содержание, выровненное по правому краю
 </pre>
 
-        <h3><a name="14" class="wiki-page"></a>Horizontal Rule</h3>
+        <h3><a name="14" class="wiki-page"></a>Горизонтальная черта</h3>
 
 <pre>
 ---
@@ -288,31 +288,31 @@ bq. Rails - это полноценный, многоуровневый фрей
     <p>
     <dl>
       <dt><code>hello_world</code></dt>
-      <dd><p>Некоторый макрос.</p></dd>
+      <dd><p>Пример макроса.</p></dd>
 
       <dt><code>macro_list</code></dt>
       <dd><p>Выводит список доступных макросов с описаниями, если они имеются.</p></dd>
 
       <dt><code>child_pages</code></dt>
-      <dd><p>Displays a list of child pages. With no argument, it displays the child pages of the current wiki page. Examples:</p>
-      <pre><code>!{{child_pages}} -- can be used from a wiki page only
-!{{child_pages(depth=2)}} -- display 2 levels nesting only</code></pre></dd>
+      <dd><p>Выводит список дочерних страниц. Если задан без параметров, то выводятся дочерние страницы для текущей. Примеры:</p>
+      <pre><code>!{{child_pages}} -- может быть использована только в wiki-втраницах
+!{{child_pages(depth=2)}} -- Выводить только 2 уровня вложенности</code></pre></dd>
 
       <dt><code>include</code></dt>
-      <dd><p>Вставить wiki страницу. Пример:</p>
+      <dd><p>Вставить wiki-страницу. Пример:</p>
       <pre><code>!{{include(Foo)}}</code></pre>
-      <p>or to include a page of a specific project wiki:</p>
+      <p>или чтобы вставить wiki-страницу определенного проекта:</p>
       <pre><code>!{{include(projectname:Foo)}}</code></pre></dd>
 
       <dt><code>collapse</code></dt>
-      <dd><p>Inserts of collapsed block of text. Example:</p>
+      <dd><p>Вставляет сворачиваемый блок текста. Пример:</p>
       <pre><code>{{collapse(View details...)
-This is a block of text that is collapsed by default.
-It can be expanded by clicking a link.
+Этот текст, который будет свернут по-умолчанию.
+Чтобы отобразить содержание, нужно кликнуть по ссылке.
 }}</code></pre></dd>
 
       <dt><code>thumbnail</code></dt>
-      <dd><p>Displays a clickable thumbnail of an attached image. Examples:</p>
+      <dd><p>Выводит уменьшенную копию изображения, которая являеется ссылкой на исходное. Пример:</p>
       <pre>{{thumbnail(image.png)}}
 {{thumbnail(image.png, size=300, title=Thumbnail)}}</pre></dd>
     </dl>
@@ -320,7 +320,7 @@ It can be expanded by clicking a link.
 
 <h2><a name="13" class="wiki-page"></a>Подсветка кода</h2>
 
-    <p>Default code highlightment relies on <a href="http://coderay.rubychan.de/" class="external">CodeRay</a>, a fast syntax highlighting library written completely in Ruby. It currently supports c, cpp, css, delphi, groovy, html, java, javascript, json, php, python, rhtml, ruby, scheme, sql, xml and yaml languages.</p>
+    <p>Правила подстветки синтаксиса по-умолчанию можно посмотреть здесь <a href="http://coderay.rubychan.de/" class="external">CodeRay</a>. Библиотека подсветки синтаксиса написана полностью на Ruby. На данный момент поддерживаются языки: c, cpp, css, delphi, groovy, html, java, javascript, json, php, python, rhtml, ruby, scheme, sql, xml и yaml.</p>
 
 <p>Вы можете включить подсветку кода используя данный синтаксис:</p>
 
